@@ -1,0 +1,21 @@
+.content-wrapper {
+  overflow: hidden;
+  margin: 2em;
+}
+.left-side {
+  width: 29%;
+  float: left;
+  padding-right: 2em;
+  border-right: solid 2px $c-dark-grey;
+  box-sizing: border-box;
+} 
+.main-wrapper {
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 2em;
+}
+.section-icon {
+  display: block;
+  margin: 0 auto;
+}

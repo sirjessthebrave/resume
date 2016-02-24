@@ -1,0 +1,16 @@
+$value: 300px;
+
+.back-bar {
+  height: 40px;
+  width: 500px;
+  background-color: gray;
+}
+.front-bar {
+  background-color:green;
+  width: 100px;
+  height: 40px;
+  animation: graph 5s forwards;
+}
+@keyframes graph {
+  100% { width: $value;}
+}
