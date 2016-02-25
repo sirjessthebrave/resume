@@ -1,0 +1,17 @@
+.tag-line {
+  @include fontsize(20);
+  color: $c-red;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.name-wrapper {
+  margin-bottom: 5em;
+}
+.contact-header {
+  width: 100px;
+  display: inline-block;
+} 
+.contact-list {
+  line-height: 2;
+}

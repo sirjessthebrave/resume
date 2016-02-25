@@ -612,10 +612,10 @@ body {
 .skip-link:focus {
   font-weight: 900; }
 
-h4, h5 {
+h5, .linked-in {
   font-style: italic; }
 
-.twitter, .facebook, .github, .award, .location, .glass, .mug, .world, .mail, .open-brakets, .close-brakets {
+.twitter, h2:after, .facebook, .github, .award, .location, .glass, .mug, .world, .mail, .open-brakets, .work-list-item:before, .close-brakets, .work-list-item:after {
   font-family: 'icon';
   font-style: normal;
   font-weight: normal;
@@ -652,7 +652,7 @@ h4, h5 {
 .mail:before {
   content: '\e909'; }
 
-.open-brakets:before {
+.open-brakets:before, .work-list-item:before {
   content: '\e907'; }
 
 .close-brakets:before {
@@ -744,14 +744,16 @@ h1 {
   font-size: 2.625rem;
   font-weight: 700;
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  text-transform: uppercase; }
 
 h2 {
   font-size: 22px;
   font-size: 1.375rem;
   font-weight: 400;
   text-align: center;
-  margin: 0; }
+  margin: 1em 0;
+  text-transform: uppercase; }
 
 h3 {
   font-size: 20px;
@@ -762,13 +764,14 @@ h3 {
 h4 {
   font-size: 20px;
   font-size: 1.25rem;
-  font-weight: 400;
-  margin: 0; }
+  font-weight: 300;
+  margin: 0;
+  margin: 1em 0 0 0; }
 
 h5 {
   font-size: 18px;
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0; }
 
 ul {
@@ -784,6 +787,24 @@ li {
   padding: .5em;
   color: #74CDCD; }
 
+.lines {
+  text-transform: uppercase;
+  color: #231f20; }
+  .lines:after {
+    content: "";
+    border-bottom: 1px solid #231f20;
+    width: 50px;
+    margin-bottom: 0.35em;
+    margin-left: 0.5em;
+    display: inline-block; }
+  .lines:before {
+    content: "";
+    border-bottom: 1px solid #231f20;
+    width: 50px;
+    margin-bottom: 0.35em;
+    margin-right: 0.5em;
+    display: inline-block; }
+
 .content-wrapper {
   overflow: hidden;
   margin: 2em; }
@@ -792,14 +813,14 @@ li {
   width: 29%;
   float: left;
   padding-right: 2em;
-  border-right: solid 2px #231f20;
   box-sizing: border-box; }
 
 .main-wrapper {
   float: left;
   width: 70%;
   box-sizing: border-box;
-  padding: 2em; }
+  padding: 2em;
+  border-left: solid 2px #231f20; }
 
 .section-icon {
   display: block;
@@ -824,6 +845,48 @@ li {
 @keyframes graph {
   100% {
     width: 300px; } }
+
+.job-wrapper {
+  margin-left: 3em;
+  margin-bottom: 3em; }
+
+.work-list {
+  margin: 0 0 1em 1em; }
+
+.work-list-item {
+  line-height: 1.5;
+  margin-bottom: 1em; }
+  .work-list-item:before {
+    margin: 1em 1em 0 0; }
+
+.linked-in {
+  font-size: 16px;
+  font-size: 1rem; }
+  .linked-in a {
+    text-decoration: underline; }
+
+.tag-line {
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #8c181b;
+  text-align: center;
+  text-transform: uppercase; }
+
+.name-wrapper {
+  margin-bottom: 5em; }
+
+.contact-header {
+  width: 100px;
+  display: inline-block; }
+
+.contact-list {
+  line-height: 2; }
+
+.overview-list {
+  margin-left: 3em; }
+
+.overview-list-item {
+  line-height: 2; }
 
 /* Welcome to Compass. Use this file to write IE specific override styles.
  * Import this file using the following HTML or equivalent:
