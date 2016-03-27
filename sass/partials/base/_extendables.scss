@@ -21,6 +21,27 @@
   width: 1px;
 }
 
+%lines {
+  text-transform: uppercase;
+  color: $c-dark-grey;
+  &:after {
+    content: "";
+    border-bottom: 1px solid #231f20;
+    width: 20px;
+    margin-bottom: 0.35em;
+    margin-left: 0.5em;
+    display: inline-block;
+  }
+  &:before {
+    content: "";
+    border-bottom: 1px solid #231f20;
+    width: 20px;
+    margin-bottom: 0.35em;
+    margin-right: 0.5em;
+    display: inline-block;
+  }
+}
+
 //
 // Fonts
 //

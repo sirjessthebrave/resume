@@ -27,3 +27,14 @@
   margin: 0 auto;
   width: 100px;
 }
+.about-wrapper {
+  text-align: center;
+}
+
+.activities,
+.contact {
+  @extend %lines;
+  @include breakpoint($bp-small) {
+    
+  }
+}
