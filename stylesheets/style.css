@@ -615,7 +615,7 @@ body {
 h5, .linked-in {
   font-style: italic; }
 
-.twitter, h2:after, .facebook, .github, .award, .location, .glass, .mug, .world, .mail, .open-brakets, .work-list-item:before, .close-brakets, .work-list-item:after {
+.twitter, h2:after, .facebook, .github, .linkedin, .codepen, .award, .location, .glass, .mug, .website, .mail, .open-brakets, .work-list-item:before, .close-brakets, .work-list-item:after {
   font-family: 'icon';
   font-style: normal;
   font-weight: normal;
@@ -634,6 +634,12 @@ h5, .linked-in {
 .github:before {
   content: '\e90c'; }
 
+.linkedin:before {
+  content: '\e90e'; }
+
+.codepen:before {
+  content: '\e90d'; }
+
 .award:before {
   content: '\e903'; }
 
@@ -646,7 +652,7 @@ h5, .linked-in {
 .mug:before {
   content: '\e905'; }
 
-.world:before {
+.website:before {
   content: '\e906'; }
 
 .mail:before {
@@ -809,13 +815,28 @@ li {
   overflow: hidden;
   margin: 2em; }
 
-.left-side {
+@media (min-width: 48em) {
+  .left-side {
+    width: 29%;
+    float: left;
+    padding-right: 2em;
+    box-sizing: border-box; } }
+
+.no-mediaqueries .left-side {
   width: 29%;
   float: left;
   padding-right: 2em;
   box-sizing: border-box; }
 
-.main-wrapper {
+@media (min-width: 48em) {
+  .main-wrapper {
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 2em;
+    border-left: solid 2px #231f20; } }
+
+.no-mediaqueries .main-wrapper {
   float: left;
   width: 70%;
   box-sizing: border-box;
@@ -865,6 +886,9 @@ li {
   .linked-in a {
     text-decoration: underline; }
 
+.contact-wrapper ul {
+  text-align: center; }
+
 .tag-line {
   font-size: 20px;
   font-size: 1.25rem;
@@ -872,15 +896,23 @@ li {
   text-align: center;
   text-transform: uppercase; }
 
+.address {
+  text-align: center; }
+
 .name-wrapper {
   margin-bottom: 5em; }
 
-.contact-header {
+/*.contact-header {
   width: 100px;
-  display: inline-block; }
-
+  display: inline-block;  
+}*/
 .contact-list {
-  line-height: 2; }
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 2;
+  display: inline;
+  text-align: center;
+  margin: 0 auto; }
 
 .overview-list {
   margin-left: 3em; }

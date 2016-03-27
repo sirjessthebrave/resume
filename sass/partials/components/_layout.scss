@@ -3,17 +3,24 @@
   margin: 2em;
 }
 .left-side {
-  width: 29%;
-  float: left;
-  padding-right: 2em;
-  box-sizing: border-box;
+
+  @include breakpoint($bp-small) {
+    width: 29%;
+    float: left;
+    padding-right: 2em;
+    box-sizing: border-box;
+  }
 } 
 .main-wrapper {
-  float: left;
-  width: 70%;
-  box-sizing: border-box;
-  padding: 2em;
-  border-left: solid 2px $c-dark-grey;
+  
+
+  @include breakpoint($bp-small) {
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 2em;
+    border-left: solid 2px $c-dark-grey;
+  }
 }
 .section-icon {
   display: block;

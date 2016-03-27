@@ -1,17 +1,29 @@
+.contact-wrapper {
+	ul {
+		text-align: center;
+	}
+}
 .tag-line {
   @include fontsize(20);
   color: $c-red;
   text-align: center;
   text-transform: uppercase;
 }
+.address {
+	text-align: center;
+}
 
 .name-wrapper {
   margin-bottom: 5em;
 }
-.contact-header {
+/*.contact-header {
   width: 100px;
-  display: inline-block;
-} 
+  display: inline-block;  
+}*/ 
 .contact-list {
+	@include fontsize(25);
   line-height: 2;
+  display: inline;
+  text-align: center;
+  margin: 0 auto;
 }

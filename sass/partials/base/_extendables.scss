@@ -82,6 +82,20 @@
   }
 }
 
+%linkedin{
+  @extend %icon;
+  &:before{
+    content: '\e90e';
+  }
+}
+
+%codepen{
+  @extend %icon;
+  &:before{
+    content: '\e90d';
+  }
+}
+
 %award{
   @extend %icon;
   &:before{
