@@ -17,8 +17,9 @@
   }
 }
 .linked-in {
-  @include fontsize(16);
+  @include fontsize(12);
   @extend %italic;
+  padding-bottom: 2em;
   a {
     text-decoration: underline;
   }

@@ -1,16 +1,16 @@
 {
-  "name": "boom",
+  "name": "minimal starter",
   "version": "1.0.0",
-  "description": "Drupal 7 Starter Theme by RepEquity.",
+  "description": "Minimal site starter by Jessica Bell.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com:repequity/boom.git"
+    "url": "https://github.com/sirjessthebrave/minimal-site"
   },
-  "author": "RepEquity",
+  "author": "Jessica Bell",
   "license": "ISC",
   "devDependencies": {
     "gulp": "~3.9.0",

@@ -1,6 +1,7 @@
 .content-wrapper {
-  overflow: hidden;
-  margin: 2em;
+    overflow: hidden;
+    margin: 0 2em 2em 2em;
+    padding-top: 4em;
 }
 .left-side {
 
@@ -25,8 +26,21 @@
 .section-icon {
   display: block;
   margin: 0 auto;
-  width: 100px;
+  width: 70px;
 }
+
+/* Zoom In #1 */
+.section-icon {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.section-icon:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
 .about-wrapper {
   text-align: center;
 }
